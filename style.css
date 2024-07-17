@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    font-family: "Inter", sans-serif;
+    width: 75%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+
+.home-button{
+    color: white;
+    padding: 8px 20px;
+    border-radius: 42px;
+    font-size: 1rem;
+    background: rgb(230, 83, 60);
+    border: none;
+    margin-right: 30px;
+}
+
+button{
+    color: white;
+    padding: 16px 40px;
+    border-radius: 42px;
+    font-size: 1rem;
+    background: rgb(230, 83, 60);
+    border: none;
+    margin-right: 30px;
+}
+
+.normal-button{
+    color: white;
+    padding: 16px 40px;
+    border-radius: 42px;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid white;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+/* nav style start */
+header{
+    background: linear-gradient(180.00deg, rgb(73, 73, 73) 0%,rgba(0, 0, 0, 0.959) 100%);
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.branding{
+    color: rgb(230, 83, 60);   
+    font-size: 2rem;
+    font-weight: 800;   
+    margin-left: 190px; 
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+ 
+}
+
+ul li{
+    list-style: none;
+
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 67px;
+}
+.hamburger{
+    display: none;
+}
+
+/* nav style end */
+
+
+
+
+
+
+
+
+
+/* banner style start */
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.bannertitle{
+    color: rgb(255, 255, 255);
+    font-size: 4.8rem;
+    font-weight: 900;    
+    padding-bottom: 40px;
+
+}
+.shape{
+    font-family: "Playwrite BE VLG", cursive;
+    font-weight: 100;
+}
+
+.bannerdescription{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 40px;
+    line-height: 1.5rem;
+}
+
+.twobutton{
+    display: flex;
+}
+.flotingcontent2{
+    position: absolute;
+    right: 400px;
+    bottom: 100px;
+    padding: 20px 30px;
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.flotingcontent1{
+    position: absolute;
+    right: 80px;
+    bottom: 400px;
+    padding: 20px 30px;
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: white;    
+
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #E6533C;
+    border-radius: 50%;
+    display: inline-block;
+  }
+@media  screen and (max-width:576px) {
+    body{
+        width:100%
+    }
+    .branding{
+        margin: 10px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        margin-right: 10px;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+
+
+    .banner{
+        flex-direction: column;
+    }
+    .bannertitle{
+        color: rgb(255, 255, 255);
+        font-size: 2.8rem;
+        font-weight: 700;  
+        padding: 40px 10px;  
+    }
+    .bannerdescription{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1rem;
+        font-weight: 400;
+        padding-bottom: 40px;
+        line-height: 1.5rem;
+        padding-left: 10px;
+    }
+    
+    .flotingcontent2{
+        position: absolute;
+        right: 200px;
+        bottom: 200px;
+        padding: 15px 20px;
+        background-color:rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .flotingcontent1{
+        right: 10px;
+        bottom: 400px;
+        padding: 15px 20px;
+        background-color:rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        color: white;    
+    
+    }
+    .twobutton{
+        justify-content: center
+     
+    }
+
+
+}
