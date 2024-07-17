@@ -15,6 +15,10 @@ body{
     border: 1px solid red;
 }
 
+main{
+    background-color: black;
+}
+
 
 .home-button{
     color: white;
@@ -69,10 +73,16 @@ nav{
     font-weight: 800;   
     margin-left: 190px; 
 }
+
+.nav-links{
+    
+}
 .nav-links ul{
     display: flex;
     align-items: center;
     margin-right: 150px;
+    border: 1px solid rgba(104, 102, 102, 0.247);
+    border-radius: 40px;
  
 }
 
@@ -84,6 +94,7 @@ ul li a{
     text-decoration: none;
     color: black;
     margin-right: 67px;
+    color: rgb(255, 255, 255);
 }
 .hamburger{
     display: none;
@@ -161,6 +172,59 @@ ul li a{
     border-radius: 50%;
     display: inline-block;
   }
+
+/* banner style ends */
+
+
+
+/* Habits style start */
+
+.habits h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;   
+    text-align: center; 
+    padding-top: 50px;
+}
+
+.habits p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;   
+    text-align: center; 
+    padding-top: 50px;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+.habitscard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;   
+    margin-top: 50px;
+}
+.habitscard h3{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+.habitscard p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400; 
+    text-align: center;   
+}
+
+.four-people img{
+    border-radius: 50%;
+}
+/* Habits style start */
+
 @media  screen and (max-width:576px) {
     body{
         width:100%
@@ -228,6 +292,36 @@ ul li a{
         justify-content: center
      
     }
+
+
+
+
+
+
+
+
+
+
+    .habits h1{
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-weight: 700;   
+        text-align: center; 
+        padding-top: 10px;
+    }
+
+    .habits p{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1rem;
+        font-weight: 400;   
+        text-align: center; 
+        padding: 30px 5px;
+    }
+    .habitscard{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
 
 
 }
