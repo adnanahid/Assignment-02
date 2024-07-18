@@ -146,12 +146,13 @@ ul li a{
     right: 400px;
     bottom: 100px;
     padding: 20px 30px;
-    background-color:rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     color: white;
     display: flex;
     align-items: center;
     gap: 10px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
     
 }
 .flotingcontent1{
@@ -159,9 +160,10 @@ ul li a{
     right: 80px;
     bottom: 400px;
     padding: 20px 30px;
-    background-color:rgba(255, 255, 255, 0.1);
     border-radius: 5px;
-    color: white;    
+    color: white; 
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
 
 }
 
@@ -192,8 +194,7 @@ ul li a{
     font-size: 1rem;
     font-weight: 400;   
     text-align: center; 
-    padding-top: 50px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 
@@ -259,8 +260,13 @@ ul li a{
     font-weight: 400;   
     margin-bottom: 20px;  
 }
+.runnerimg {
+    width: 40%;
+}
+
 .runnerimg img{
-    border-radius: 10px;
+    width: 100%;
+    padding: 30px;
 }
 
 /* runner sstyle start */
@@ -269,6 +275,23 @@ ul li a{
 
 /* our team style start */
 
+
+
+.ourteam{
+    text-align: center;
+    color: white;
+    margin: 50px auto;
+}
+
+.ourteam h1{
+    font-size: 3rem;
+
+}
+.ourteam p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 50px;
+}
 .trainers{
     width: 80%;
     margin: 0 auto;
@@ -276,7 +299,7 @@ ul li a{
     grid-template-columns: repeat(3, 1fr);
     border: 1px solid white;
     gap: 40px;
-    text-align: center;
+    background: rgb(34, 34, 34);
 
 }
 .trainer>img{
@@ -293,6 +316,7 @@ ul li a{
     background-image: url(images/trainer1.png);
     background-position: center;
     background-size: cover;
+    margin: 30px;
 }
 
 .trainer-info2{
@@ -302,6 +326,7 @@ ul li a{
     background-image: url(images/trainer2.png);
     background-position: center;
     background-size: cover;
+    margin: 30px;
 }
 
 .trainer-info3{
@@ -311,6 +336,7 @@ ul li a{
     background-image: url(images/trainer3.png);
     background-position: center;
     background-size: cover;
+    margin: 30px;
 }
 
 .trainer-info4{
@@ -320,6 +346,7 @@ ul li a{
     background-image: url(images/trainer4.png);
     background-position: center;
     background-size: cover;
+    margin: 30px;
 }
 
 
@@ -330,6 +357,7 @@ ul li a{
     background-image: url(images/trainer5.png);
     background-position: center;
     background-size: cover;
+    margin: 30px;
 }
 
 
@@ -340,6 +368,7 @@ ul li a{
     background-image: url(images/trainer6.png);
     background-position: center;
     background-size: cover;
+    margin: 30px;
 }
 
 
@@ -348,6 +377,11 @@ ul li a{
     padding-left: 10px;
     color: white;
 }
+
+
+
+
+
 
 
 
@@ -372,7 +406,7 @@ ul li a{
 
 
 
-
+/* banner style start */
 
     .banner{
         flex-direction: column;
@@ -391,7 +425,7 @@ ul li a{
         line-height: 1.5rem;
         padding-left: 10px;
     }
-    
+
     .flotingcontent2{
         position: absolute;
         right: 200px;
@@ -419,6 +453,7 @@ ul li a{
      
     }
 
+    /* banner style end */
 
 
 
@@ -426,8 +461,7 @@ ul li a{
 
 
 
-
-
+    /* habits style start */
     .habits h1{
         color: rgb(255, 255, 255);
         font-size: 2rem;
@@ -448,13 +482,36 @@ ul li a{
         gap: 50px;
     }
 
+    /* habits style start */
 
 
 
 
+
+    /* runner style start */
     .runner{
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .runner-content{
+        padding-left: 10px;
+        width: 90%;
+    }
+    .runnerimg {
+        width: 90%;
+    }
+    
+    .runnerimg img{
+        width: 100%;
+        padding: 10px;
+    }
+    
+
+    /* runner style ends */
 
 
+    .trainers{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
