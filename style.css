@@ -240,14 +240,13 @@ ul li a{
     margin: 0 auto;
     background: rgb(34, 34, 34);
     align-items: center;
-
+    justify-content: space-around;
 }
 .runner-content{
-    
-}
-.runnerimg{
+    padding-left: 40px;
     width: 40%;
 }
+
 .runner-content h1{
     color: rgb(255, 255, 255);
     font-size: 48px;
@@ -260,9 +259,97 @@ ul li a{
     font-weight: 400;   
     margin-bottom: 20px;  
 }
-
+.runnerimg img{
+    border-radius: 10px;
+}
 
 /* runner sstyle start */
+
+
+
+/* our team style start */
+
+.trainers{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid white;
+    gap: 40px;
+    text-align: center;
+
+}
+.trainer>img{
+    width: 326px;
+    height: 272px;
+    
+}
+
+
+.trainer-info1{
+    width: 313px;
+    height: 272px;
+    border: 1px solid white;
+    background-image: url(images/trainer1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.trainer-info2{
+    width: 313px;
+    height: 272px;
+    border: 1px solid white;
+    background-image: url(images/trainer2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.trainer-info3{
+    width: 313px;
+    height: 272px;
+    border: 1px solid white;
+    background-image: url(images/trainer3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.trainer-info4{
+    width: 313px;
+    height: 272px;
+    border: 1px solid white;
+    background-image: url(images/trainer4.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.trainer-info5{
+    width: 313px;
+    height: 272px;
+    border: 1px solid white;
+    background-image: url(images/trainer5.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.trainer-info6{
+    width: 313px;
+    height: 272px;
+    border: 1px solid white;
+    background-image: url(images/trainer6.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.info{
+    padding-top: 220px;
+    padding-left: 10px;
+    color: white;
+}
+
+
 
 @media  screen and (max-width:576px) {
     body{
@@ -363,4 +450,11 @@ ul li a{
 
 
 
+
+
+    .runner{
+        flex-direction: column;
+
+
+    }
 }
