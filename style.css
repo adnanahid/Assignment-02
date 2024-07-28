@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 *{
     margin: 0;
     padding: 0;
@@ -11,11 +12,11 @@
 body{
     font-family: "Inter", sans-serif;
     width: 75%;
-    margin: 0 auto;
+    margin: 50px auto;
     border: 1px solid red;
 }
 
-main{
+main,header,footer{
     background-color: black;
 }
 
@@ -25,7 +26,7 @@ main{
     padding: 8px 20px;
     border-radius: 42px;
     font-size: 1rem;
-    background: rgb(230, 83, 60);
+    background: rgb(231, 63, 37);
     border: none;
     margin-right: 30px;
 }
@@ -35,7 +36,7 @@ button{
     padding: 16px 40px;
     border-radius: 42px;
     font-size: 1rem;
-    background: rgb(230, 83, 60);
+    background: rgb(231, 71, 47);
     border: none;
     margin-right: 30px;
 }
@@ -68,10 +69,10 @@ nav{
     padding-top: 50px;
 }
 .branding{
-    color: rgb(230, 83, 60);   
-    font-size: 2rem;
+    color: rgb(231, 68, 43);   
+    font-size: 3rem;
     font-weight: 800;   
-    margin-left: 190px; 
+    margin-left: 150px; 
 }
 
 .nav-links{
@@ -126,8 +127,10 @@ ul li a{
 
 }
 .shape{
-    font-family: "Playwrite BE VLG", cursive;
-    font-weight: 100;
+    font-family: 'Miama', sans-serif;
+    font-weight: 500;
+    font-size: 9rem;
+    line-height: 2rem;
 }
 
 .bannerdescription{
@@ -143,7 +146,7 @@ ul li a{
 }
 .flotingcontent2{
     position: absolute;
-    right: 400px;
+    right: 350px;
     bottom: 100px;
     padding: 20px 30px;
     border-radius: 5px;
@@ -157,7 +160,7 @@ ul li a{
 }
 .flotingcontent1{
     position: absolute;
-    right: 80px;
+    right: 50px;
     bottom: 400px;
     padding: 20px 30px;
     border-radius: 5px;
@@ -170,7 +173,7 @@ ul li a{
 .dot {
     height: 25px;
     width: 25px;
-    background-color: #E6533C;
+    background-color: #e9462d;
     border-radius: 50%;
     display: inline-block;
   }
@@ -238,7 +241,7 @@ ul li a{
     display: flex;
     gap: 150px;
     border-radius: 18px;
-    margin: 0 auto;
+    margin: 100px auto;
     background: rgb(34, 34, 34);
     align-items: center;
     justify-content: space-around;
@@ -265,11 +268,102 @@ ul li a{
 }
 
 .runnerimg img{
-    width: 100%;
-    padding: 30px;
+    width: 90%;
+    margin: 30px 0px 30px;
+    border-radius: 10px;
 }
 
-/* runner sstyle start */
+/* runner style start */
+
+
+
+
+/* bmi table  style star*/
+.bmititle{
+    margin-left: 300px;
+    color: white;
+
+}
+.bmititle h1{
+    font-size: 3rem;
+
+}
+ 
+.bmititle p{
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 30px;
+}
+
+.charttitle{
+    margin-bottom: 20px;
+}
+
+.BMI-Calculator h1{
+    margin: 10px 0px;
+
+}
+.BMI-Calculator p{
+    margin: 10px 0px;
+}
+
+
+
+
+/* bmi table  ends star*/
+
+
+
+/* challenge style start */
+
+.challeng{
+    color: white;
+    background: rgb(34, 34, 34);
+    margin: 50px auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.charttitle{
+    font-size: 2rem;
+}
+
+
+table{
+    width: 300px;
+    height: 200px;
+}
+
+table,th,td{
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    border-collapse: collapse;
+    padding: 7px;
+}
+
+td{
+    color: rgba(255, 255, 255, 0.5);
+
+}
+.chart{
+    padding: 40px;
+
+}
+input, select{
+    background-color: rgb(68, 67, 67);
+    width: 170px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 5px 5px 0px;
+    outline: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+#full{
+    width: 350px;
+    height: 40px;
+}
+/* challenge style start */
 
 
 
@@ -280,7 +374,8 @@ ul li a{
 .ourteam{
     text-align: center;
     color: white;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .ourteam h1{
@@ -292,83 +387,78 @@ ul li a{
     color: rgba(255, 255, 255, 0.5);
     padding-bottom: 50px;
 }
-.trainers{
-    width: 80%;
+
+.trainer-section{
+    width: 75%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border: 1px solid white;
-    gap: 40px;
     background: rgb(34, 34, 34);
+    border-radius: 16px;
 
 }
-.trainer>img{
-    width: 326px;
-    height: 272px;
-    
+.trainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px;
+    gap: 20px;
 }
-
 
 .trainer-info1{
     width: 313px;
     height: 272px;
-    border: 1px solid white;
     background-image: url(images/trainer1.png);
     background-position: center;
     background-size: cover;
-    margin: 30px;
+    border-radius: 10px;
 }
 
 .trainer-info2{
     width: 313px;
     height: 272px;
-    border: 1px solid white;
     background-image: url(images/trainer2.png);
     background-position: center;
     background-size: cover;
-    margin: 30px;
+    border-radius: 10px;
 }
 
 .trainer-info3{
     width: 313px;
     height: 272px;
-    border: 1px solid white;
     background-image: url(images/trainer3.png);
     background-position: center;
     background-size: cover;
-    margin: 30px;
+    border-radius: 10px;
 }
 
 .trainer-info4{
     width: 313px;
     height: 272px;
-    border: 1px solid white;
     background-image: url(images/trainer4.png);
     background-position: center;
     background-size: cover;
-    margin: 30px;
+    border-radius: 10px;
+
 }
 
 
 .trainer-info5{
     width: 313px;
     height: 272px;
-    border: 1px solid white;
     background-image: url(images/trainer5.png);
     background-position: center;
     background-size: cover;
-    margin: 30px;
+    border-radius: 10px;
+
 }
 
 
 .trainer-info6{
     width: 313px;
     height: 272px;
-    border: 1px solid white;
     background-image: url(images/trainer6.png);
     background-position: center;
     background-size: cover;
-    margin: 30px;
+    border-radius: 10px;
+
 }
 
 
@@ -380,9 +470,82 @@ ul li a{
 
 
 
+/* footer section start */
+
+footer{
+    width: 100%;
+    background: rgb(34, 34, 34);
+
+
+}
+
+.footerdivs{
+    display: flex;
+    gap: 60px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    justify-content: space-between;
+
+
+}
+
+.fitness{
+    color: rgb(235, 64, 38);
+    font-size: 70px;
+    font-weight: 800; 
+}
 
 
 
+.footerone{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    width: 50%;
+ 
+}
+
+.footertwo{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.footerthree{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footertwo h3, .footerthree h3{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+    
+}
+.footerone p,.footertwo p, .footerthree p{
+    padding-top: 20px;
+    font-size: 1.5rem;
+
+
+
+
+
+}
+
+hr{
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid rgba(255, 255, 255, 0.274);
+
+}
+
+.copyright{
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
 
 
 @media  screen and (max-width:576px) {
@@ -425,6 +588,12 @@ ul li a{
         line-height: 1.5rem;
         padding-left: 10px;
     }
+    .shape{
+        font-family: 'Miama', sans-serif;
+        font-weight: 500;
+        font-size: 5rem;
+        line-height: 1rem;
+    }
 
     .flotingcontent2{
         position: absolute;
@@ -449,7 +618,8 @@ ul li a{
     
     }
     .twobutton{
-        justify-content: center
+        justify-content: space-around;
+        margin-left: 25px;
      
     }
 
@@ -497,21 +667,68 @@ ul li a{
     .runner-content{
         padding-left: 10px;
         width: 90%;
+    
     }
     .runnerimg {
         width: 90%;
+        border-radius: 10px;
     }
     
     .runnerimg img{
-        width: 100%;
-        padding: 10px;
+        width: 100%;   
     }
     
 
     /* runner style ends */
 
+/* challenge style start */
+.bmititle{
+    margin: 20px;
+}
 
-    .trainers{
-        grid-template-columns: repeat(1, 1fr);
+
+    .challeng{
+        flex-direction: column;
     }
+
+    .BMI-Calculator{
+        margin: 0 10px;
+    }    
+
+    
+/* challenge style ends */
+
+
+
+/* tainers style start */
+    .trainer{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 12px;
+    }
+    .trainer-section{
+        width: 85%;
+
+    }
+    .trainer-info1,
+    .trainer-info2,
+    .trainer-info3,
+    .trainer-info4,
+    .trainer-info5,
+    .trainer-info6{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+
+    /* tainers ends start */
+
+    /* footer style start */
+    
+    .footerdivs{
+        flex-direction: column;
+        margin: 20px;
+        gap: 70px;
+    }
+
+
 }
