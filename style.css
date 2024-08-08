@@ -13,7 +13,6 @@ body{
     font-family: "Inter", sans-serif;
     width: 75%;
     margin: 50px auto;
-    border: 1px solid red;
 }
 
 main,header,footer{
@@ -33,7 +32,7 @@ main,header,footer{
 
 button{
     color: white;
-    padding: 16px 40px;
+    padding: 16px 70px;
     border-radius: 42px;
     font-size: 1rem;
     background: rgb(231, 71, 47);
@@ -94,7 +93,7 @@ ul li{
 ul li a{
     text-decoration: none;
     color: black;
-    margin-right: 67px;
+    padding: 30px;
     color: rgb(255, 255, 255);
 }
 .hamburger{
@@ -235,7 +234,7 @@ ul li a{
 
 
 
-/* runner sstyle start */
+/* runner style start */
 .runner{
     width: 80%;
     display: flex;
@@ -274,7 +273,6 @@ ul li a{
 }
 
 /* runner style start */
-
 
 
 
@@ -319,13 +317,14 @@ ul li a{
     color: white;
     background: rgb(34, 34, 34);
     margin: 50px auto;
+    padding: 50px;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .charttitle{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 
@@ -346,7 +345,6 @@ td{
 }
 .chart{
     padding: 40px;
-
 }
 input, select{
     background-color: rgb(68, 67, 67);
@@ -354,7 +352,7 @@ input, select{
     height: 40px;
     border-radius: 5px;
     padding: 10px;
-    margin: 5px 5px 5px 0px;
+    margin: 5px 5px 10px 0px;
     outline: none;
     border: none;
     color: rgba(255, 255, 255, 0.5);
@@ -543,7 +541,7 @@ hr{
 
 .copyright{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -680,6 +678,7 @@ hr{
     
 
     /* runner style ends */
+
 
 /* challenge style start */
 .bmititle{
