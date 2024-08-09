@@ -145,6 +145,24 @@ ul li a{
 .twobutton{
     display: flex;
 }
+
+.flotingcontent1{
+    position: absolute;
+    right: 50px;
+    bottom: 400px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: white; 
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+}
+.flotingcontent1 h1{
+    font-size: 2.5rem;
+}
+.flotingcontent1 p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.637);
+}
 .flotingcontent2{
     position: absolute;
     right: 350px;
@@ -157,18 +175,9 @@ ul li a{
     gap: 10px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
-    
 }
-.flotingcontent1{
-    position: absolute;
-    right: 50px;
-    bottom: 400px;
-    padding: 20px 30px;
-    border-radius: 5px;
-    color: white; 
-    backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.1);
-
+.flotingcontent2 h1{
+    font-size: 2rem;
 }
 
 .dot {
@@ -516,11 +525,16 @@ input, select{
     width: 320px;
     height: 320px;
 }
-.ads div h1, h2, p{
+.ads-card h2{
+    text-align: center;
+    padding-top: 30px;
+}
+.ads-card p{
     text-align: center;
     padding-top: 30px;
 }
 .ads-card h1{
+    text-align: center;
     font-size: 2.5rem;
 }
 .registerlink{
@@ -535,8 +549,6 @@ input, select{
 footer{
     width: 100%;
     background: rgb(34, 34, 34);
-
-
 }
 
 .footerdivs{
@@ -546,8 +558,6 @@ footer{
     margin: 0 auto;
     padding-top: 100px;
     justify-content: space-between;
-
-
 }
 
 .fitness{
@@ -563,7 +573,6 @@ footer{
     font-size: 1rem;
     font-weight: 400;
     width: 50%;
- 
 }
 
 .footertwo{
@@ -587,18 +596,12 @@ footer{
 .footerone p,.footertwo p, .footerthree p{
     padding-top: 20px;
     font-size: 1.5rem;
-
-
-
-
-
 }
 
 hr{
     width: 80%;
     margin: 50px auto;
     border: 1px solid rgba(255, 255, 255, 0.274);
-
 }
 
 .copyright{
@@ -610,6 +613,7 @@ hr{
 
 
 @media  screen and (max-width:576px) {
+   
     body{
         width:100%
     }
@@ -628,9 +632,7 @@ hr{
 
 
 
-
-
-/* banner style start */
+    /* banner style start */
 
     .banner{
         flex-direction: column;
@@ -687,11 +689,6 @@ hr{
     /* banner style end */
 
 
-
-
-
-
-
     /* habits style start */
     .habits h1{
         color: rgb(255, 255, 255);
@@ -743,10 +740,10 @@ hr{
     /* runner style ends */
 
 
-/* challenge style start */
-.bmititle{
-    margin: 20px;
-}
+    /* challenge style start */
+    .bmititle{
+     margin: 20px;
+     }
 
 
     .challeng{
@@ -758,11 +755,11 @@ hr{
     }    
 
     
-/* challenge style ends */
+    /* challenge style ends */
 
 
 
-/* tainers style start */
+    /* tainers style start */
     .trainer{
         grid-template-columns: repeat(1, 1fr);
         padding: 12px;
@@ -806,6 +803,4 @@ hr{
         /* margin: 20px; */
         gap: 70px;
     }
-
-
 }
