@@ -155,6 +155,7 @@ ul li a{
     color: white; 
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
+
 }
 .flotingcontent1 h1{
     font-size: 2.5rem;
@@ -174,7 +175,7 @@ ul li a{
     align-items: center;
     gap: 10px;
     backdrop-filter: blur(20px);
-    background: rgba(48, 48, 48, 0.54);
+ 
 }
 .flotingcontent2 h1{
     font-size: 2rem;
@@ -381,12 +382,14 @@ input, select{
 
 
 .ourteam{
-    text-align: center;
+    /* text-align: center; */
     color: white;
     margin: 0 auto;
     padding-bottom: 100px;
 }
-
+.meet{
+    text-align: center;
+}
 .ourteam h1{
     font-size: 3rem;
 
@@ -410,6 +413,7 @@ input, select{
     padding: 30px;
     gap: 20px;
 }
+
 
 .trainer-info1{
     width: 313px;
@@ -445,7 +449,6 @@ input, select{
     background-position: center;
     background-size: cover;
     border-radius: 10px;
-
 }
 
 
@@ -456,7 +459,6 @@ input, select{
     background-position: center;
     background-size: cover;
     border-radius: 10px;
-
 }
 
 
@@ -467,7 +469,6 @@ input, select{
     background-position: center;
     background-size: cover;
     border-radius: 10px;
-
 }
 
 
@@ -800,6 +801,12 @@ hr{
     .footerdivs{
         flex-direction: column;
         gap: 70px;
+    }
+    .footerone{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1rem;
+        font-weight: 400;
+        width: 100%;
     }
 }
    
